@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href=".//styles/main.css">
+    <link rel="icon" href="./images/icon.png">
+    <title>4 paskaita - 09.15 Git ir GitHub</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#position">Position</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="position"> <!-- Position -->
+            <h1>Position</h1>
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+            <p>
+                Naudojant bet kuria isskyrus Static, gauname prieiga prie 4 nauju stiliu: top, left, right, bottom, z-index.<br> Sie stiliai nurodo per koki atstuma elementas turi buti atitrauktas nuo savo pradines pozicijos. Z-index stilius nurodo elemento prioriteta sluoksniuose
+            </p>
+            <p>
+                <b>Static</b> - nieko ypatingo nedaro, net nesutiekia galimybes naudoti top left right arba bottom, z-index.
+            </p>
+            <div class="kvadratuKonteineris">
+                <div class="kvadratas statinis">Static 1</div>
+                <div class="kvadratas statinis top_20 right_40">Static 2</div>
+                <div class="kvadratas statinis">Static 3</div>
+                <div class="kvadratas statinis">Static 4</div>
+            </div>
+            <p>
+                <b>Relative</b> - nieko ypatingo nedaro, bet suteikia galimybe naudoti top right left bottom z-index. Elementui suteikus pozicija, jis atsitraukia per nurodyta atstuma nuo savo pradines pozicijos.
+            </p>
+            <div class="kvadratuKonteineris">
+                <div class="kvadratas statinis top_20">Static 1</div>
+                <div class="kvadratas reliatyvus top_20 right_40">Relative 2</div>
+                <div class="kvadratas reliatyvus left_30 z_index">Relative 3</div>
+                <div class="kvadratas reliatyvus">Relative 4</div>
+            </div>
+            <p>
+                <b>Absolute</b> - elementas iseina is puslapio tekmes.<br> Elementui suteikus top right left bottom stilius jis atsitraukia per nurodyta atstuma nuo jo tevinio elemento turincio kazkuria pozicija, o jei tokio nera tuomet nuo html.
+            </p>
+            <div class="kvadratuKonteineris reliatyvus">
+                <div class="kvadratas statinis">Static 1</div>
+                <div class="kvadratas reliatyvus">Relative 2</div>
+                <div class="kvadratas absoliutus top_20">Absolute 3</div>
+                <div class="kvadratas statinis">Static 4</div>
+            </div>
+            <p>
+                <b>Fixed</b> - elementas iseina is puslapio tekmes ir fiksuojasi nurodytoje arba savo pradineje pozicijoje.<br> Elementui suteikus top right left bottom stilius jis atsitraukia per nurodyta atstuma nuo html. <br>Taip pat, jeigu nera nustatytas elemento dydis - elementas sumazeja iki minimalaus dydzio. Naudojamas MENU.
+            </p>
+            <div class="kvadratuKonteineris">
+                <div class="kvadratas statinis">Static 1</div>
+                <div class="kvadratas statinis">Static 2</div>
+                <div class="kvadratas fiksuotas top_20 right_40 z_index10">Fixed 3</div>
+                <div class="kvadratas statinis">Static 4</div>
+            </div>
+            <p>
+                <b>Sticky</b> - is puslapio tekmes neiseina, ekrano krastams priartejus prie jo, prilimpa prie ekrano krastu per nurodyta atstuma top bottom, bet jis negali iseiti is savo tevinio elemento ribu. Tevinis neprivalo tureti reliatyvine ar kita pozicija.
+            </p>
+            <div class="kvadratuKonteineris reliatyvus stickyKonteineris">
+                <div class="kvadratas statinis">Static 1</div>
+                <div class="kvadratas statinis">Static 2</div>
+                <div class="kvadratas statinis">Static 3</div>
+                <div class="kvadratas lipnus top_20">Sticky 4</div>
+            </div>
+            <div style="height: 500px;"></div>
+            <p>Fone paveiksliukas - paveiksliukas absoliutus, overflow hidden,virsus 0, z index negatyvus</p>
+        </section>
+        <section> <!-- git github -->
+            <div> <!-- command line / terminal -->
+                <h1>Terminalo komandos</h1>
+                <ul>
+                    <li><b>cd - change directory</b> - pakeisti direktorija - vaiksciojimas tarp aplanku.</li>
+                    <li><b>ls - list files and directories</b> - isvardinti failus ir aplankus.</li>
+                    <li><b>CTRL C</b> - atsaukia vykdoma veiksma</li>
+                    <li><b>TAB</b> - uzbaigia fraze arba pateikia pasiulymus</li>
+                    <li><b>clear</b> - nukelia visa terminale rodoma informacija i virsu</li>
+                </ul>
+            </div>
+            <div> <!-- git config -->
+                <p>
+                    <b>git config --global user.name "username"</b> - vartotojo vardas<br>
+                    <b>git config --global user.email "email"</b> - el.pastas<br>
+                    <b>git config --global core.editor "code"</b><br>
+                    <b>git config --global core.autocrlf true</b><br>
+                    <b>git config --global e</b> - atidaro ir parodo info per editoriu<br>
+                    <b>git config --help</b>
+                </p>
+            </div>
+            <div><!-- git komandos -->
+                <h1>Git komandos</h1>
+                <ul>
+                    <li><b>git init</b> - inicializuoti - sukuria git repozitoria.</li>
+                    <li><b>git status</b> - statusas - parodo dabartini tavo gito repozitorios statusa</li>
+                    <li><b>git add</b> - stage'ina/prideda/paruosia failus commit'inimui</li>
+                    <li><b>git add .</b> - paruosia visus failus commitinimui.</li>
+                    <li><b>git commit -m "commit'o zinute"</b> - sukuria kodo versija is stage'intu failu</li>
+                </ul>
+            </div>
+        </section>
+        <!-- icon -->
+        <!-- CSS selectors -->
+        <!-- flex -->
+    </main>
+</body>
+</html>

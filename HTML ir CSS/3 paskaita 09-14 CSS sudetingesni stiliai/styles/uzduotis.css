@@ -1,0 +1,95 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+:root {
+    --chocco: rgb(63, 47, 37);
+    --latte: rgb(224, 213, 205);
+    --lightviolet: rgb(250, 192, 230);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    background-color: var(--latte);
+    height: 150px;
+    position: sticky;
+    top: 0;
+}
+.logoImg{
+    height:130px;
+    margin-top: 10px;
+}
+.inlineBlockDisplay{
+    display: inline-block;
+}
+.navMenu li{
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.navMenu a{
+    color:var(--chocco);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navMenu a:hover{
+    color: violet;
+}
+.menuDiv{
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+    width: 30%;
+}
+.cafeNameDiv{
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 30%;
+}
+.navMenu ul{
+    padding: 0;
+}
+.imgFullScreen img{
+    width: 800px;
+    height: auto;
+}
+.divHalfScreen{
+    display: inline-block;
+    border: 2px solid var(--chocco);
+    padding: 5px;
+}
+.divHalfScreen img{
+    width: 400px;
+    height: 250px;
+}
+section{
+    text-align: center;
+}
+footer{
+    background-color: var(--latte);
+}
+footer img{
+    width: auto;
+    height: 100px;
+}
+.imgBakers{
+    width: 800px;
+    height: auto;
+}
+label{
+    font-weight: bold;
+}
+footer nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: var(--chocco);
+}

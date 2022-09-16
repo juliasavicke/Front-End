@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 paskaita 09-13 CSS ivadas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        p{
+            font-weight: bold;
+            color: blueviolet;
+        }
+        #pirmas{
+            color:aqua;
+            line-height: 30px;
+        }
+        .klase{
+            border: 3px solid purple;
+            border-radius: 10%;
+            color: blue;
+        }
+        .klase2{
+            color: rgb(20, 220, 70);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-family: monospace;">
+        <h1>Inline CSS - Linijinis CSS</h1>
+        <p style="color:dimgrey; font-size: 18px;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, consequuntur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, voluptatum.
+        </p>
+        <p>
+            Linijinis stilizavimas kai norima ant greituju pastilizuoti arba testuoti
+        </p>
+    </div>
+    <div>
+        <h1>Internal CSS - Vidinis CSS</h1>
+        <p id="pirmas">Vienas id turi buti priskirtas vienam elementui ir vienas elementas turi tureti tik viena id.</p>
+        <p class="raudonasTekstas melynasTekstas">Klase gali buti priskirta keliems elementams.</p>
+    </div>
+    <div>
+        <H1>External CSS - Isorinis CSS</H1>
+        <p>
+            <span class="paryskintasTekstas">Isorinis stilizavimas</span> naudojamas kaip taisyklingas budas stilizavimui.
+        </p>
+
+    </div>
+    <div>
+        <h1>CSS rasymo budai</h1>
+        <ul style="list-style-type: none;">
+            <li><b>Inline</b> - linijinis rasomas tago viduje naudojant style atributa</li>
+            <li><b>Internal</b> - vidinis rasomas style tago viduje head dalyje</li>
+            <li><b>External</b> - isorinis rasomas atskirame CSS faile, kuri reikia prijungti prie HTML naudojant link taga</li>
+        </ul>
+    </div>
+    <div>
+        <h1>CSS Selectoriai</h1>
+        <ul style="list-style-type: none;">
+            <li><b>element</b> - parenkamas elementas pagal jo pavadinima (p{})</li>
+            <li><b>id</b> - sukuriamas susigalvotas id pavadinimas ir priskiriamas vienam elementui (#idpavadinias{})</li>
+            <li><b>class</b> - sukuriamas susigalvotas klases pavadinimas ir priskiriamas bet kokiam kiekiui elementu (.klasesVardas{})</li>
+        </ul>
+    </div>
+    <div>
+        <h1>CSS Stiliai</h1>
+        <ul style="list-style-type: none;">
+            <li><b>color</b> - teksto spalva (color: red)</li>
+            <li><b>font-size</b> - teksto dydis (font-size: 20px)</li>
+            <li><b>background-color</b> - fono spalva (background-color: green)</li>
+            <li><b>font-family</b> - teksto sriftas (font-family: monospace)</li>
+            <li><b>font-weight</b> - teksto storis (font-weight: bold)</li>
+            <li><b>line-height</b> - teksto eilutes aukstis (line-height: 20px)</li>
+            <li><b>border</b> - teksto remelis (border: 2px solid red)</li>
+            <li><b>border-radius</b> - teksto remelio kampu apvalinimas (border-radius: 10px)</li>
+            <li><b>text-align</b> - teksto lygiavimas (text-align: center)</li>
+            <li><b>font-style</b> - teksto stilius (font-style: italic)</li>
+        </ul>
+    </div>
+</body>
+
+</html>

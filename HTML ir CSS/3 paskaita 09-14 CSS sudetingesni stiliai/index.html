@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <title>3 paskaita</title>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <ul class="navBar center">
+                <li><a href="#failuKeliai">Failu keliai</a></li>
+                <li><a href="#puslapioStruktura">Puslapio struktura</a></li>
+                <li><a href="#menuInfo">Menu info</a></li>
+                <li><a href="#displays">Displays</a></li>
+                <li><a href="#modelBox">Model Box</a></li>
+                <li><a href="#toggleMygtukai">Toggle mygtukai</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <section>
+        <div id="failuKeliai"> <!-- Failu keliai -->
+            <div class="center">
+                <h1>Failu keliu nurodymai</h1>
+                <img src="./images/1.jpg" width="300px">
+                <p>
+                    Nurodant aplanko varda - nueinama i nurodyta aplanka
+                </p>
+                <p>
+                    Norint atlikti sekanti veiksma - reikia parasyti " / "
+                </p>
+                <img src="../2 paskaita 09-13 CSS ivadas/1.jpg" width="300px">
+                <p>
+                    Norint zengti zingsni atgal i aplanko - reikia parasyti " .. "
+                </p>
+            </div>
+        </div>
+        <div id="puslapioStruktura"> <!-- Puslapio struktura -->
+            <h1 class="center">Puslapio struktura</h1>
+            <ul>
+                <li><b>header</b> - puslapio virsus, kuriama nurodoma informacija apie puslapi / menu</li>
+                <li><b>nav</b> - skirtas kurti puslapio menu</li>
+                <li><b>section</b> - didziule puslapio dalis</li>
+                <li><b>div</b> - maza puslapio dalis</li>
+                <li><b>article</b> - main dalyje esanti sekcija</li>
+                <li><b>footer</b> - puslapio apacia, kurioje yra ivairi info : terms, privacy policy, copyrights, links, parteniai, remejai....</li>
+            </ul>
+            <div class="center">
+                <img src="./images/4.jpg" width="300px">
+                <img src="./images/5.jpg" width="300px">
+                <img src="./images/6.jpg" width="300px">
+            </div>
+        </div>
+        <div id="menuInfo"> <!-- Menu info -->
+            <h1 class="center">Menu info</h1>
+            <p>
+                Kuriant menu - naudojamas nav tagas, kurio viduje yra rikiuotas/nerikiuotas sarasas. To saraso elementu viduje yra nuorodos tagas, kuris nurodo i kazkuria puslapio dali arba i kita puslapi.
+            </p>
+            <p>
+                Nuorodos tago atidaromojoje dalyje esantis atributas href nurodo i kur vartotojas turi buti nukeltas, paspaudus ant nuorodos.
+            </p>
+            <p>
+                Jeigu href atributas nurodo i kazkoki ID, tuomet vartotojas yra nukeliamas i puslapio dali, kuriai yra suteiktas nurodytas ID.<br><a href="#home">home</a>
+            </p>
+            <p>
+                Jeigu href atrobutas nurodo i kita html faila, tuomet vartotojas yra nukeliamas i kita html faila.<br><a href="./pages/random.html" target="_blank">random</a>
+            </p>
+        </div>
+        <div id="displays"> <!-- Display -->
+            <h1 class="center">Display - Inline, Block, Inline-block</h1>
+            <div><!-- Inline -->
+                <h2>Inline</h2>
+                <p>
+                    <b>Inline</b> elementai yra tokie elementai, kurie uzima tik tiek vietos ekrane, kiek jiems reikalinga. <b>Minusas</b> tas, kad negalima keisti siu elementu dydziu. <b>Pliusas</b> tas, kad jie labai lengvai itelpa i bet kuria puslapio vieta.<br> Tagu pvz: a, span, img, input, button, label, select, textarea, cite ir t.t.
+                </p>
+                <div class="linijinis kvadratas">Linijinis</div>
+                <div class="linijinis kvadratas">Linijinis</div>
+                <div class="linijinis kvadratas">Linijinis</div>
+            </div>
+            <div><!-- Block -->
+                <h2>Block</h2>
+                <p>
+                    <b>Block</b> elementai yra tokie elementai, kurie uzima visa leistina ploti ir neisileidzia kitu elementu i ta pacia eilute. <b>Minusas</b> tas, kad uzima visa leistina ploti. <b>Pliusas</b> tas, kad galima keisti ju dydi. <br>Tagu pvz: h1-h6, p, div, section, main, article, nav, ol, ul, li, hr, blockquote, aside, canvas, table ir t.t.
+                </p>
+                <div class="blokinis kvadratas">Blokinis</div>
+                <div class="blokinis kvadratas">Blokinis</div>
+                <div class="blokinis kvadratas">Blokinis</div>
+            </div>
+            <div><!-- Inline-Block -->
+                <h2>Inline-Block</h2>
+                <p>
+                    <b>Inline-Block</b> elementai yra tokie elementai, kurie pasisavino geriausias Blokiniu ir Linijiniu elementu savybes. Jie uzima tik tiek vietos kiek jiems reikia, bet ju dydi vie tiek galima keisti.
+                </p>
+                <div class="linijinisBlokinis kvadratas">Linijinis-Blokinis</div>
+                <div class="linijinisBlokinis kvadratas">Linijinis-Blokinis</div>
+                <div class="linijinisBlokinis kvadratas">Linijinis-Blokinis</div>
+            </div>
+        </div>
+        <div id="modelBox"><!-- Model Box -->
+            <h1 class="center">Model Box</h1>
+            <p>
+                <b>Margin</b> - atstumas nuo elemento remelio iki aplinkiniu elementu remelio. Skirtingu elementu  virsaus ir apacios marginai persidengia.
+            </p>
+            <p>
+                <b>Border</b> - remelis, kuris yra tarp margin ir padding.
+            </p>
+            <p>
+                <b>Padding</b> - atstumas nuo elemento turinio iki elemento remelio.
+            </p>
+            <p>
+                <b>Content</b> - elemento turinys. Blokinio elemento turinys uzims visa leidziama eilute arba nurodyta dydi.
+            </p>
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" width="500px">
+            <div>
+                <div class="kvadratas linijinisBlokinis">Pirmas</div>
+                <div class="kvadratas linijinisBlokinis margin1 border1 padding1">Antras</div>
+                <div class="kvadratas linijinisBlokinis">Trecias</div>
+            </div>
+            <p>
+                Galime aprasyti Margin, Border ir Padding nustatymus 4 skirtingais budais:<br>
+                Vienas matmuo visom 4 krastinem (margin: 50px)<br>
+                Rasant du matmenis - pirmasis virsui ir apaciai, antrasas sonams (margin: 20px 50px)
+                Rasant tris matmenis - pirmas virsui, antras sonams, treciai apaciai (padding: 20px 50px 30px)
+                Rasant keturis matmenis - pirmas virsui, antras desinei, trecias apaciai, ketvirtas kairei (padding: 10px 20px 5px 15px)
+            </p>
+            <p>
+                Galima nurodyti, kuria krastine nori stilizuoti. (border-right-color: orange;)
+            </p>
+        </div>
+        <div class="center" id="toggleMygtukai"> <!-- Javascript toggle div mygtukai -->
+            <h1>Toggle mygtukai - JavaScript</h1>
+            <button onclick="toggleDiv(failuKeliai)">Slepti/Rodyti <b>Failu keliai</b></button>
+            <button onclick="toggleDiv(puslapioStruktura)">Slepti/Rodyti <b>Puslapio struktura</b></button>
+            <button onclick="toggleDiv(menuInfo)">Slepti/Rodyti <b>Menu info</b></button>
+            <button onclick="toggleDiv(displays)">Slepti/Rodyti <b>Displays</b></button>
+            <button onclick="toggleDiv(modelBox)">Slepti/Rodyti <b>Model Box</b></button>
+            <br><br>
+            <img src="./images/7.jpg" width="700px">
+        </div>
+    </section>
+    
+    <script>
+        function toggleDiv(x) {
+            //var x = document.getElementById("failuKeliai");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            }
+    </script>
+</body>
+</html>
