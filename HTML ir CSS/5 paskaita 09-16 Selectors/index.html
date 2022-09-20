@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <!-- icon -->
+        <h1>Ikonos</h1><hr>
+        <p>
+            <a href="https://www.w3schools.com/icons/icons_reference.asp" target="_blank">Ikonu sarasas</a>
+        </p>
+        <div> <!-- Font Awesome ikonos-->
+            <h2>Font Awesome</h2>
+            <p>
+                Norint naudoti font awesome ikonas, reikia prijungti jo biblioteka.<br>
+                Norint panaudoti ikonas, reikia naudoti i arba span tagus ir jiem suteikus class atributa nurodyti fa klase ir norimos ikonos klase.
+                <br>
+                Norint panaudoti ikonas reikia nurodyti i arba span tagus ir jiems suteikus class atributa, nurodyti fa klase, ir content dalyje irasyti ikonos unicode.
+            </p>
+            <i class="fa fa-youtube"></i>
+            <span class="fa fa-youtube-play italicIcon"></span>
+            <i class="fa">&#xf061;</i>
+        </div>
+        <div> <!-- Bootstrap ikonos -->
+            <h2>Bootstrap ikonos</h2>
+            <p>
+                <span class="glyphicon glyphicon-download-alt bigIcon"></span>
+            </p>
+        </div>
+        <div> <!-- Google ikonos -->
+            <h2>Google ikonos</h2>
+            <p>
+                <i class="material-icons redIcon">add_a_photo</i>
+            </p>
+        </div>
+        <div> <!-- ikonu stilizavimas -->
+            <h2>Ikonu stilizavimas</h2>
+            <p>
+                Ikonas reikia stilizuoti kaip tekstinius elementus (ne width height, bet font-size ir t.t.)
+            </p>
+        </div>
+    </section>
+    <section> <!-- Fono trynimo programele -->
+        <h1>Fono trynimo programele</h1>
+        <p>
+            <a href="https://pixlr.com/e/" target="_blank">Pixlr.com</a>
+        </p>
+    </section>
+    <section>
+        <!-- Parent / child elements -->
+        <h1>Parent / child elements</h1>
+        <p>
+            Elementas, kuris savo viduje turi kitus elementus yra jiems tevinis elementas.<br>
+            Elementas, kuris yra kazkokio elemento viduje yra jam vaikinis elementas.
+        </p>
+        <p>
+            Elementas gali tureti viena vieninteli tevini elementa.<br>
+            Elementas gali tureti daugeli vaikiniu elementu savo viduje.
+        </p>
+        <ol>
+            <li>Pirmas</li>
+            <li>Antras</li>
+            <li>
+                Trecias
+                <ol>
+                    <li>Trecio pirmas</li>
+                    <li>Trecio antras</li>
+                    <li>Trecio trecias</li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+    <section class="klase3">
+        <h1>CSS Selectors</h1>
+        <p>
+            <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Visus CSS selectors galima rasti cia</a>
+        </p>
+        <ul>
+            <li><b>element</b> - tagas</li>
+            <li id="id0"><b>#id</b> - id</li>
+            <li class="klase0"><b>.class</b> - klase</li>
+            <li class="klase1 klase2"><b>.class1.class2</b> - kai suteiktos abi klases</li>
+            <li class="klase4"><b>.klase3 klase4</b> - kai elemento, turincio klase4 klase, teviniui elementui sutekta klase3 klase</li>
+            <li><b>*</b> - suteikia viskam</li>
+            <li><b>element1, element2</b> - isvardintus ir kableliu atskirtus elementus</li>
+            <li><b>element1 > element2</b> - element2, kurio tevinis yra element1</li>
+            <li><b>a:link</b> - nelankytos nuorodos</li>
+            <li><b>a:visited</b> - lankytos nuorodos</li>
+            <li><b>a:hover</b> - uzvedus pele</li>
+            <li><b>:nth-child(skaicius)</b> - skaiciumi nurodytas kazkelintas arba kas kazkelintas vaikinis elementas</li>
+        </ul>
+        <p><a href="https://flukeout.github.io/" target="_blank">Zaidimas su lekstemis CSS selectoriams</a></p>
+        <div class="nth_lentele">
+            <h1>NTH lentele</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pirmas</th>
+                        <th>Antras</th>
+                        <th>Trecias</th>
+                        <th>Ketvirtas</th>
+                        <th>Penktas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.1</td>
+                        <td>1.2</td>
+                        <td>1.3</td>
+                        <td>1.4</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>2.1</td>
+                        <td>2.2</td>
+                        <td>2.3</td>
+                        <td>2.4</td>
+                        <td>2.5</td>
+                    </tr>
+                    <tr>
+                        <td>3.1</td>
+                        <td>3.2</td>
+                        <td>3.3</td>
+                        <td>3.4</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr>
+                        <td>4.1</td>
+                        <td>4.2</td>
+                        <td>4.3</td>
+                        <td>4.4</td>
+                        <td>4.5</td>
+                    </tr>
+                    <tr>
+                        <td>5.1</td>
+                        <td>5.2</td>
+                        <td>5.3</td>
+                        <td>5.4</td>
+                        <td>5.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

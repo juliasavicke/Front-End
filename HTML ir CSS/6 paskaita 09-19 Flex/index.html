@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <title>FLEX</title>
+</head>
+<body>
+    <section>
+        <h1>Display: flex</h1>
+        <p>
+            Suteikus konteineriui flex nustatyma, jo viduje elementai issidesto vienas salia kito. <br> Elementai gali susispausti, kad tilptu i viena eilute, sitaip ignoruodami savo paciu nustatytus dydzius. <br>
+            Suteikus flex konteineriui flex-direction - galite valdyti jo viduje esanciu elementu issidestymo tvarka. <br>
+            Suteikus flex konteineriui flex-wrap - galime nurodyti ar ir kaip elgtis esant elementu pertekliui vienoje eiluteje arba stulpelyje. <br>
+            Suteikus flex konteineriui justify-content - galime valdyti kaip elementai issidesto (Tarpai tarp elementu) eiluteje (jeigu flex-direction yra row). <br>
+            Suteikus flex konteineriui align-items - galime valdyti kaip elementai issidesto (elementu grupes) stulpelyje (jeigu flex-direction yra row). <br>
+            Suteikus flex konteineriui align-content - galime valdyti kaip elementai issidesto (Tarpai tarp elementu) stulpelyje (jei flex-direction yra row). <br>
+            Suteikus flex konteineriui gap - galime nurodyti kokie tarpai turi buti tarp jo vaikiniu elementu.
+        </p>
+        <div class="flexContainer">
+            <div class="kvadratas">1</div>
+            <div class="kvadratas">2</div>
+            <div class="kvadratas flexKetvirtas">3</div>
+            <div class="kvadratas">4</div>
+            <div class="kvadratas">5</div>
+            <div class="kvadratas flexTrecias">6</div>
+            <div class="kvadratas">7</div>
+            <div class="kvadratas">8</div>
+            <div class="kvadratas">9</div>
+            <div class="kvadratas flexAntras">10</div>
+            <div class="kvadratas">11</div>
+            <div class="kvadratas flexPirmas">12</div>
+        </div>
+        <a href="https://flexboxfroggy.com/"> flex zaidimas</a>
+    </section>
+    <section>
+        <h1>Uzdaviniai</h1>
+        <div class="pirmasPratimas">
+            <div class="pirmasKvadratas kvadratai">1</div>
+            <div class="flexInFlex">
+                <div class="antrasKvadratas kvadratai">2</div>
+                <div class="flexInFlexInFlex">
+                    <div class="treciasKvadratas kvadratai">3</div>
+                    <div class="ketvirtasKvadratas kvadratai">4</div>
+                </div>
+            </div>
+        </div>
+        <h2>Big Task FLEX</h2>
+        <div>
+            <div class="bigTaskContainer containerTask1">
+                <div class="containerTask1NextLevel h33">
+                    <div class="taskBg w33"></div>
+                    <div class="taskBg w66"></div>
+                </div>
+                <div class="containerTask1NextLevel h33">
+                    <div class="taskBg w66"></div>
+                    <div class="taskBg w33"></div>
+                </div>
+                <div class="containerTask1NextLevel h33">
+                    <div class="taskBg w33"></div>
+                    <div class="taskBg w66 "></div>
+                </div>
+            </div>
+
+
+            <div class="bigTaskContainer containerTask2">
+                <div class="containerTask2Level1 h66">
+                    <div class="taskBg w66"></div>
+                    <div class="containerTask2Level2 w33">
+                        <div class="taskBg h50"></div>
+                        <div class="taskBg h50"></div>
+                    </div>
+                </div>
+                <div class="containerTask2Level1 h33">
+                    <div class="taskBg w33"></div>
+                    <div class="taskBg w33"></div>
+                    <div class="taskBg w33"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.bigIcon{
+    font-size: 50px;
+}
+.redIcon{
+    color: red;
+}
+.italicIcon{
+    font-style: italic;
+}
+/* selectors */
+li{
+    font-size: 20px;
+}
+.klase0{
+    color: rebeccapurple;
+}
+#id0{
+    background-color: aqua;
+}
+.klase1.klase2{
+    text-transform: uppercase;
+}
+.klase3 .klase4{
+    text-decoration: underline;
+}
+.klase3 > p{
+    background-color: bisque;
+}
+.nth_lentele > table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto 50px;
+}
+.nth_lentele th, .nth_lentele td{
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+/* .nth_lentele tbody > tr:nth-child(3){
+    color: red;
+    background-color: grey;
+} */
+
+/* komentavimo trumpinys CTRL /  */
+
+/* .nth_lentele tbody > tr:nth-child(3n+2){
+    background-color: aquamarine;
+} */
+/* .nth_lentele tbody > tr:nth-child(1n+3){
+    background-color: beige;
+}
+.nth_lentele tbody > tr:hover{
+    background-color: bisque;
+}
+.nth_lentele td::after{
+    content: " :)";
+} */
+.nth_lentele table{
+    overflow: hidden;
+}
+.nth_lentele td{
+    position: relative;
+}
+.nth_lentele td:hover::before{
+    position: absolute;
+    background-color: beige;
+    content: " ";
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+}
+/*
+    Stulpeliu zymejimas:
+    Position
+    z-index
+    width+height
+    backgroud-color
+*/
