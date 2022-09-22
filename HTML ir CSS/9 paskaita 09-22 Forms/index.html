@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>9 paskaita</title>
+  </head>
+  <body>
+    <section class="message">
+      <div class="sendMessageDiv">
+        <h2>SEND US A MESSAGE</h2>
+        <form action="" class="form" autocomplete="off">
+          <input
+            class="messageInput focusResize focusOutlineDisable"
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Full Name"
+          />
+          <input
+            class="messageInput focusResize focusOutlineDisable"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail"
+          />
+          <input
+            class="messageInput focusResize focusOutlineDisable"
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+          />
+          <div class="checkboxDiv">
+            <input type="checkbox" id="salygos" />
+            <label for="salygos">Terms and Conditions</label>
+          </div>
+
+          <fieldset>
+            <legend>Fav color</legend>
+            <input type="radio" id="red" value="red" name="favColor" />
+            <label for="red">Red</label>
+            <input type="radio" id="green" value="green" name="favColor" />
+            <label for="green">Green</label>
+            <input type="radio" id="blue" value="blue" name="favColor" />
+            <label for="blue">Blue</label>
+          </fieldset>
+          <div class="bdayDiv">
+            <label for="bday">Your b-day</label>
+            <input
+              type="date"
+              class="messageInput focusOutlineDisable"
+              id="bday"
+            />
+          </div>
+          <input
+            type="number"
+            placeholder="fav number"
+            class="messageInput focusOutlineDisable"
+            min="1"
+            max="10"
+          />
+          <label for="weather" class="mb10">
+            Choose your favourite weather</label
+          >
+          <select
+            name=""
+            id="weather"
+            class="messageInput focusOutlineDisable select"
+            form="form"
+          >
+            <option value="" class="colorGray" selected disabled>Select</option>
+            <option value="Rainy">Rainy</option>
+            <option value="Sunny">Sunny</option>
+            <option value="Windy">Windy</option>
+            <option value="Snowy">Snowy</option>
+          </select>
+
+          <label for="avatar">Avatar image</label>
+          <input type="file" class="messageInput" id="avatar" />
+
+          <textarea
+            class="messageInput focusOutlineDisable focusResize"
+            name="yourMessage"
+            id="yourMessage"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+          <button class="messageSendBtn" type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Send
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

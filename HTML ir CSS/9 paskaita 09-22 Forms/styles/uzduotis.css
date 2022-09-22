@@ -1,0 +1,173 @@
+@import url("reset.css");
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.shippingAddressSection {
+  background-color: darkcyan;
+}
+.shippingAddressDiv {
+  background-color: rgb(237, 238, 231);
+  max-width: 500px;
+  margin: auto;
+  padding: 10px 20px;
+}
+.shippingAddressGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.gc1span2 {
+  grid-column: 1 / span 2;
+}
+.inputField {
+  padding: 10px 20px;
+  margin-top: 8px;
+}
+.policies {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.buttons {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectCountryText {
+  font-size: 12px;
+  margin-top: 0;
+}
+.shippingAddressSection h1 {
+  font-weight: normal;
+}
+.submitBtn {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-size: 14px;
+  align-self: center;
+}
+.return {
+  margin: 0;
+  font-weight: bold;
+}
+.registrationSection {
+  background-image: linear-gradient(to right, #faaf7b, #f8cd69);
+}
+.registrationDiv {
+  background-color: rgb(255, 255, 255);
+  max-width: 500px;
+  margin: auto;
+  padding: 10px 20px;
+}
+.registrationGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+}
+.radioGender {
+  grid-column: 1 / span 2;
+}
+.submitBtn2 {
+  grid-column: 1 / span 2;
+  border: 0;
+
+  background-image: linear-gradient(to right, #faaf7b, #f8cd69);
+  color: white;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.inputDiv label {
+  margin-bottom: 8px;
+}
+.inputDiv input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(197, 197, 197);
+  box-shadow: 1px 1px 1px gray;
+}
+.re {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 109, 47);
+}
+.contactForm06Section {
+  background-color: #fafafa;
+}
+.contactFormContainer {
+  background-color: #e8edf0;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+}
+.gridItem {
+  max-width: 100%;
+}
+.ContactFormInputDiv {
+  display: flex;
+  flex-direction: column;
+}
+.contactUsForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.span {
+  grid-column: 1 / span 2;
+}
+.map iframe {
+  max-width: 100%;
+}
+.contactForm {
+  padding: 30px;
+}
+.ContactFormInputDiv label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+.ContactFormInputDiv input,
+.ContactFormInputDiv textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  border-radius: 2px;
+}
+.ContactFormInputDiv textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+.contactForm06Section h1 {
+  text-align: center;
+}
+.contactForm h2 {
+  font-weight: normal;
+}
+.contactUsForm input::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactUsForm textarea::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactForm06Btn {
+  background-color: #2553b8;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-self: flex-start;
+  padding: 15px 25px;
+}

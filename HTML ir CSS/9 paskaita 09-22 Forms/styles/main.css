@@ -1,0 +1,85 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("reset.css");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(67, 67, 67);
+}
+.sendMessageDiv {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-color: rgb(244, 238, 232);
+  border: 1px solid rgb(190, 190, 190);
+}
+.messageInput {
+  width: 95%;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.messageSendBtn {
+  background-color: rgb(124, 100, 180);
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
+}
+.messageInput::placeholder {
+  color: #bfbebd;
+}
+textarea.messageInput {
+  resize: vertical;
+  min-height: 100px;
+}
+.messageSendBtn:hover {
+  padding: 20px 50px;
+}
+.focusResize:focus {
+  width: 100%;
+  outline: 0;
+}
+.focusOutlineDisable {
+  outline: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sendMessageDiv h2 {
+  text-align: center;
+}
+.checkboxDiv {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+fieldset {
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+.bdayDiv {
+  align-self: flex-start;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.select option:first-child {
+  color: #bfbebd;
+}
+.select:invalid {
+  color: #bfbebd;
+}
