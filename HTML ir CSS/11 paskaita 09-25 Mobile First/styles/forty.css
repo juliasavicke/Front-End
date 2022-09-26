@@ -1,0 +1,137 @@
+@import url("reset.css");
+
+html {
+  font-size: 16px;
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/forty/banner.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8em 1.5em 4em 1.5em;
+}
+.hero__title {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.hero__subTitle {
+  font-size: 0.7em;
+  letter-spacing: 0.25em;
+  line-height: 1.4em;
+}
+.hero__hr {
+  border-bottom: 1px solid white;
+  height: 2px;
+  margin-bottom: 2em;
+  width: 100%;
+}
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  margin: auto;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  height: 320px;
+}
+.post__header {
+  align-self: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  max-width: 70%;
+  padding: 0 1.5em;
+  z-index: 2;
+}
+.post__image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  object-fit: cover;
+  align-self: stretch;
+  width: 100%;
+}
+.post__overlay--mint {
+  background-color: rgba(127, 255, 212, 0.4);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: opacity 0.2s;
+}
+.post__overlay--red {
+  background-color: rgba(255, 127, 127, 0.4);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.post__hr {
+  border-bottom: 2px solid white;
+  height: 2px;
+  margin-bottom: 1em;
+  width: 100%;
+}
+.post__title {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.post__subTitle {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+}
+.post:hover .post__overlay--mint {
+  opacity: 0.4;
+}
+
+/* Responsive */
+
+/* Tablet portrait */
+@media screen and (min-width: 480px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 980px) {
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+  .five {
+    grid-area: five;
+  }
+  .six {
+    grid-area: six;
+  }
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "one one one two two"
+      "three three four four four"
+      "five five five six six";
+  }
+}
+.btn--arrow::after {
+  content: "\2192";
+  font-size: 2rem;
+  padding: 0 0 0 10px;
+}

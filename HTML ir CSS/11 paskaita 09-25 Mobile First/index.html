@@ -12,7 +12,7 @@
       <h1>Mobile First</h1>
     </div>
     <div class="posts">
-      <article class="post post_1">
+      <article class="post post_1 card">
         <h3>Css is style</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, modi!
@@ -25,15 +25,20 @@
           placeat.
         </p>
       </article>
-      <article class="post post_2">
+      <article class="post post_2 card">
         <h3>HTML is structure</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, modi!
-          Inventore possimus quo laborum saepe, iste autem provident quisquam
-          placeat.
-        </p>
+
+        <img
+          src="./images/cat-original.jpg"
+          alt="cat"
+          srcset="
+            ./images/cat-320.jpg         320w,
+            ./images/cat-small-640.jpg   768w,
+            ./images/cat-medium-1280.jpg
+          "
+        />
       </article>
-      <article class="post post_3">
+      <article class="post post_3 card">
         <h3>JS is interactivity</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, modi!
@@ -41,7 +46,7 @@
           placeat.
         </p>
       </article>
-      <article class="post post_4">
+      <article class="post post_4 card">
         <h3>Node is back end</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, modi!
