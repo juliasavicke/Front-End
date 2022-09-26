@@ -102,6 +102,7 @@ section {
 .re {
   text-decoration: underline;
   text-decoration-color: rgb(255, 109, 47);
+  text-underline-offset: 3px;
 }
 .contactForm06Section {
   background-color: #fafafa;
@@ -170,4 +171,21 @@ section {
   display: flex;
   justify-self: flex-start;
   padding: 15px 25px;
+}
+.circles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px auto;
+  gap: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+.round {
+  background-color: #2553b8;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 60px;
 }

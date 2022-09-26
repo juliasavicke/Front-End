@@ -1,0 +1,79 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("reset.css");
+
+.container {
+  max-width: 1140px;
+  padding-top: 2rem;
+}
+html {
+  font-size: 10px;
+}
+p {
+  font-size: 16px;
+  color: #7a838b;
+}
+.title {
+  font-size: 3.8rem;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: normal;
+}
+.subtitle {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto 4rem;
+  line-height: 1.5;
+}
+
+.tripGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+.tripItem {
+  background-color: white;
+  position: relative;
+}
+.tripDesc {
+  padding: 2.7rem 2.2rem 2.5rem;
+}
+.tripTitle {
+  font-size: 2.2rem;
+  margin-bottom: 0.4em;
+  font-weight: normal;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.gold {
+  color: gold;
+}
+.space-between {
+  justify-content: space-between;
+}
+.tripPrice {
+  background-color: #1ec6b6;
+  border-radius: 20px;
+  padding: 0.2em 0.7em;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .tripGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  html {
+    font-size: 8px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .tripGrid {
+    grid-template-columns: 1fr;
+  }
+}

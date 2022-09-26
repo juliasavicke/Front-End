@@ -1,0 +1,46 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("reset.css");
+
+header {
+  background-color: rgb(43, 144, 226);
+  font-size: 60px;
+}
+main {
+  background-color: bisque;
+  flex-basis: 70%;
+}
+aside {
+  background-color: darkgrey;
+  flex-grow: 1;
+}
+footer {
+  background-color: rgb(208, 208, 208);
+}
+.element {
+  min-height: 150px;
+}
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 768px) {
+  /* Cia parasytos taisykles galioja nuo 768px */
+
+  main {
+    background-color: rgb(142, 241, 117);
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* Cia parasytos taisykles galioja nuo 375px */
+
+  .flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  main {
+    background-color: blue;
+  }
+  header {
+    font-size: 35px;
+  }
+}

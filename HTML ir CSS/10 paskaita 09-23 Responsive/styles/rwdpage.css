@@ -1,0 +1,86 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("reset.css");
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "asideMenu main asideNews"
+    "footer footer footer";
+}
+.header {
+  background-color: coral;
+  text-align: center;
+  padding-top: 16px;
+  grid-area: header;
+}
+.menuContainer div {
+  background-color: brown;
+  padding: 20px 30px;
+}
+.main {
+  grid-area: main;
+}
+.asideNews {
+  grid-area: asideNews;
+}
+.asideMenu {
+  grid-area: asideMenu;
+}
+.footer {
+  background-color: coral;
+  text-align: center;
+  padding-top: 16px;
+  grid-area: footer;
+}
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.main * {
+  margin: 30px;
+}
+.asideNews {
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas:
+      "header header"
+      "asideMenu main"
+      "asideNews main"
+      "footer footer";
+  }
+  .main * {
+    margin: 16px;
+    margin: 16px;
+  }
+  .asideNews {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "asideMenu"
+      "main"
+      "asideNews"
+      "footer";
+  }
+  .main * {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .asideNews {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

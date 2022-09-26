@@ -1,0 +1,68 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("reset.css");
+.bg-white {
+  background-color: white;
+  padding: 2em 3em;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px grey;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "navbar navbar"
+    "asideLogin main"
+    "asideHelp main"
+    "footer footer";
+  gap: 1rem;
+}
+.header {
+  grid-area: header;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  grid-area: navbar;
+}
+.asideLogin {
+  grid-area: asideLogin;
+}
+.asideHelp {
+  grid-area: asideHelp;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "navbar"
+      "asideLogin"
+      "main"
+      "footer";
+    max-width: 100%;
+  }
+  .asideHelp {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+  .navbar a {
+    border-bottom: 1px solid gray;
+    padding: 1em;
+  }
+}
+.contentTitle {
+  margin-bottom: 1em;
+}
