@@ -65,6 +65,14 @@ body {
     gap: 1rem;
     width: 90%;
   }
+  .portfolioGalleryContainer {
+    width: 23%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 768px) {
   .ourTeamContainer {
@@ -73,4 +81,26 @@ body {
     gap: 1rem;
     width: 90%;
   }
+}
+.portfolioBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.portfolioBtn {
+  background-color: blue;
+  border-radius: 30px;
+  color: white;
+}
+.portfolioTitle {
+  text-align: center;
+}
+.portfolioTitle h1 {
+  color: blue;
+}
+.portfolioDiv {
+  margin: 2rem;
 }
