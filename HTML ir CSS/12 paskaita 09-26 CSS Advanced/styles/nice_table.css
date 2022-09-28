@@ -1,0 +1,97 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("reset.css");
+
+.tableDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+  place-items: center;
+  padding: 2rem 0 2rem 0;
+}
+.table {
+  width: 900px;
+  border-radius: 15px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.table tbody {
+  color: grey;
+  background-color: white;
+}
+.table thead {
+  color: white;
+  background-color: #36304a;
+  text-align: left;
+}
+.table tr {
+  height: 50px;
+}
+th,
+td {
+  padding-left: 10px;
+}
+.table tbody tr:nth-child(even) {
+  background-color: rgb(225, 225, 225);
+}
+.right {
+  text-align: right;
+  padding-right: 10px;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+.logo {
+  font-size: 28px;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+}
+
+.hasSubMenu:hover .subMenu {
+  transform: scaleY(1);
+}
+.unlisted {
+  list-style-type: none;
+}
+.menu > li {
+  display: inline-block;
+  padding: 2rem;
+}
+.hasSubMenu::after {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  content: "\f078";
+}
+.subMenu {
+  padding-left: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.2s;
+}
+.subMenu > li {
+  padding: 1rem;
+}
+.subMenu .navLink:hover {
+  background-color: #e4e4e4;
+}
+.footer {
+  background-color: #333333;
+  color: white;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.footerContainer h1 {
+  font-weight: normal;
+}

@@ -1,0 +1,76 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("reset.css");
+body {
+  background-color: white;
+}
+.ourTeamContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 320px;
+  height: auto;
+}
+.ourTeamTitleDiv {
+  text-align: center;
+}
+.ourTeamTitle {
+  color: rgb(65, 65, 255);
+}
+.ourTeamSubtitle {
+  color: rgb(105, 105, 105);
+}
+.ourTeamItemImgDiv {
+  position: relative;
+}
+.imgHover {
+  position: absolute;
+  height: 100%;
+  background-color: blue;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+  color: white;
+}
+.ourTeamItemImgDiv:hover .imgHover {
+  transform: scaleX(1);
+}
+.ourTeamItem {
+  padding: 1rem;
+  height: 100%;
+}
+.ourTeamItem__name {
+  font-weight: normal;
+  padding-left: 1rem;
+}
+.ourTeamItem__occupation {
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  font-size: small;
+  color: grey;
+  margin-bottom: 0;
+}
+.ourTeamItemImgDiv {
+  display: flex;
+  flex-direction: column;
+}
+.imgHover {
+  padding: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .ourTeamContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ourTeamContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 90%;
+  }
+}
