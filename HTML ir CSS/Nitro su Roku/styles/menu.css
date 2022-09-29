@@ -1,0 +1,33 @@
+.menuLogo a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+.menuLogo span {
+  color: blue;
+}
+
+.mainMenu {
+  display: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+}
+.mainMenu li {
+  list-style: none;
+}
+.mainMenu > li > a {
+  text-decoration: none;
+  color: rgb(231, 231, 231);
+  font-size: 1.2rem;
+  padding: 5px 12px;
+}
+.mainMenu > li > a:hover {
+  color: white;
+}
+
+.mainMenuBurger {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}

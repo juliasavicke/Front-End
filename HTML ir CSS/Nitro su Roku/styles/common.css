@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+  height: 1000vh;
+}
+
+section {
+  padding: 100px 0 20px;
+  min-height: 30vh;
+  background-color: aliceblue;
+}
+
+.container {
+  min-width: 540px;
+  margin: 0 auto;
+}

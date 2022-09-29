@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+  .teamCardsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    min-width: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainMenuBurger {
+    display: none;
+  }
+  .mainMenu {
+    display: flex;
+  }
+  .menu {
+    width: 60%;
+  }
+  .teamCardsContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .container {
+    min-width: 992px;
+  }
+}

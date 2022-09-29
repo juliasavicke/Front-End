@@ -1,0 +1,68 @@
+/* Responsive CSS ============= */
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .team-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .team-card__image {
+    height: 330px;
+  }
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 0.7fr auto 1fr;
+    gap: 1.2rem;
+  }
+  .team-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .team-card__image {
+    height: 210px;
+  }
+  .container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-nav > ul {
+    display: flex;
+  }
+  .burger {
+    display: none;
+  }
+  .social-link:first-child {
+    padding-left: 0;
+  }
+  .services-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .thinkers {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .thinkers-cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .thinkers-image {
+    width: 50%;
+  }
+}
