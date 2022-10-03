@@ -1,12 +1,18 @@
+$primary-color: darkgreen;
+$secondary-color: tomato;
+$main-font: Verdana, Arial, sans-serif;
+
 body{
+    font-family: $main-font;
+
     .container{
         h1{
             font-size: 3rem;
-            color: aqua;
+            color: $primary-color;
         }
         h3{
             font-size: 2rem;
-            color:coral;
+            color: $secondary-color;
         }
     }
 }

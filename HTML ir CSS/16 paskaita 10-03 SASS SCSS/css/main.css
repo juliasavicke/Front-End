@@ -1,8 +1,11 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+}
 body .container h1 {
   font-size: 3rem;
-  color: aqua;
+  color: darkgreen;
 }
 body .container h3 {
   font-size: 2rem;
-  color: coral;
+  color: tomato;
 }/*# sourceMappingURL=main.css.map */
