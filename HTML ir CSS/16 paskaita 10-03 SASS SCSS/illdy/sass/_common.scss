@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+.btn{
+    border: none;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    color: white;
+    &:hover{
+        background-color: darken(rgb(144, 80, 255), 15%);
+    }
+    &.btn--arrow::before{
+        content:'\f138';
+        font-family: 'FontAwesome';
+        padding-right: 10px;
+    }
+}
